@@ -1,0 +1,212 @@
+# Формат: V1|V2|V3|Перевод
+# Символ # в начале строки - комментарий
+
+# === TOP 50 самых частотных ===
+be|was/were|been|быть
+have|had|had|иметь
+do|did|done|делать
+say|said|said|говорить
+get|got|got/gotten|получать
+make|made|made|создавать
+go|went|gone|идти
+know|knew|known|знать
+take|took|taken|брать
+see|saw|seen|видеть
+come|came|come|приходить
+think|thought|thought|думать
+give|gave|given|давать
+find|found|found|находить
+tell|told|told|рассказывать
+feel|felt|felt|чувствовать
+become|became|become|становиться
+leave|left|left|покидать
+put|put|put|класть
+mean|meant|meant|означать
+keep|kept|kept|держать
+let|let|let|позволять
+begin|began|begun|начинать
+show|showed|shown|показывать
+hear|heard|heard|слышать
+run|ran|run|бежать
+bring|brought|brought|приносить
+write|wrote|written|писать
+sit|sat|sat|сидеть
+stand|stood|stood|стоять
+lose|lost|lost|терять
+pay|paid|paid|платить
+meet|met|met|встречать
+set|set|set|устанавливать
+learn|learnt/learned|learnt/learned|учить
+lead|led|led|вести
+understand|understood|understood|понимать
+speak|spoke|spoken|говорить
+read|read|read|читать
+spend|spent|spent|тратить
+grow|grew|grown|расти
+win|won|won|побеждать
+teach|taught|taught|учить
+buy|bought|bought|покупать
+send|sent|sent|отправлять
+build|built|built|строить
+fall|fell|fallen|падать
+cut|cut|cut|резать
+sell|sold|sold|продавать
+eat|ate|eaten|есть
+
+# === 51-100 ===
+drink|drank|drunk|пить
+fly|flew|flown|летать
+drive|drove|driven|водить
+break|broke|broken|ломать
+choose|chose|chosen|выбирать
+forget|forgot|forgotten|забывать
+wear|wore|worn|носить (одежду)
+hide|hid|hidden|прятать
+catch|caught|caught|ловить
+draw|drew|drawn|рисовать
+fight|fought|fought|сражаться
+throw|threw|thrown|бросать
+shake|shook|shaken|трясти
+hit|hit|hit|ударять
+hold|held|held|держать
+hang|hung|hung|висеть
+bite|bit|bitten|кусать
+blow|blew|blown|дуть
+dig|dug|dug|копать
+ride|rode|ridden|ездить верхом
+ring|rang|rung|звонить (колокол)
+rise|rose|risen|подниматься
+sing|sang|sung|петь
+sink|sank|sunk|тонуть
+sleep|slept|slept|спать
+steal|stole|stolen|воровать
+swim|swam|swum|плавать
+swing|swung|swung|качаться
+tear|tore|torn|рвать
+wake|woke|woken|просыпаться
+wind|wound|wound|заводить (часы)
+bear|bore|borne|нести/рождать
+beat|beat|beaten|бить
+bend|bent|bent|сгибать
+bind|bound|bound|связывать
+bleed|bled|bled|кровоточить
+breed|bred|bred|разводить
+burn|burnt/burned|burnt/burned|гореть
+burst|burst|burst|взрываться
+cling|clung|clung|цепляться
+creep|crept|crept|красться
+deal|dealt|dealt|иметь дело
+dream|dreamt/dreamed|dreamt/dreamed|мечтать
+feed|fed|fed|кормить
+flee|fled|fled|убегать
+freeze|froze|frozen|мерзнуть
+grind|ground|ground|молоть
+kneel|knelt|knelt|стоять на коленях
+lay|laid|laid|класть
+lean|leant/leaned|leant/leaned|опираться
+
+# === 101-150 ===
+leap|leapt/leaped|leapt/leaped|прыгать
+lend|lent|lent|одалживать
+lie|lay|lain|лежать
+light|lit|lit|зажигать
+quit|quit|quit|бросать (привычку)
+shut|shut|shut|закрывать
+slide|slid|slid|скользить
+spin|spun|spun|вращаться
+spit|spat|spat|плевать
+split|split|split|разделять
+spread|spread|spread|распространять
+spring|sprang|sprung|прыгать
+stick|stuck|stuck|прилипать
+sting|stung|stung|жалить
+stink|stank|stunk|вонять
+strike|struck|struck|ударять
+swear|swore|sworn|клясться
+sweep|swept|swept|подметать
+weave|wove|woven|ткать
+weep|wept|wept|плакать
+withdraw|withdrew|withdrawn|отступать
+wring|wrung|wrung|выжимать
+arise|arose|arisen|возникать
+awake|awoke|awoken|будить
+cost|cost|cost|стоить
+seek|sought|sought|искать
+shine|shone|shone|сиять
+shoot|shot|shot|стрелять
+spell|spelt/spelled|spelt/spelled|писать по буквам
+spill|spilt/spilled|spilt/spilled|проливать
+spoil|spoilt/spoiled|spoilt/spoled|портить
+stride|strode|stridden|шагать
+strive|strove|striven|стремиться
+swell|swelled|swollen|опухать
+thrust|thrust|thrust|толкать
+tread|trod|trodden|ступать
+upset|upset|upset|расстраивать
+undertake|undertook|undertaken|браться
+wed|wed|wed|жениться
+wet|wet/wetted|wet/wetted|мочить
+withhold|withheld|withheld|удерживать
+withstand|withstood|withstood|выдерживать
+forgive|forgave|forgiven|прощать
+forbid|forbade|forbidden|запрещать
+foresee|foresaw|foreseen|предвидеть
+misunderstand|misunderstood|misunderstood|неправильно понимать
+overcome|overcame|overcome|преодолевать
+overtake|overtook|overtaken|обгонять
+redo|redid|redone|переделывать
+rewrite|rewrote|rewritten|переписывать
+
+# === 151-200 ===
+undo|undid|undone|отменять
+unfreeze|unfroze|unfrozen|размораживать
+outgrow|outgrew|outgrown|перерастать
+outdo|outdid|outdone|превосходить
+outbid|outbid|outbid|перебивать (ставку)
+outfly|outflew|outflown|обгонять (в полете)
+outrun|outran|outrun|обгонять (в беге)
+outsell|outsold|outsold|продавать больше
+outthink|outthought|outthought|перехитрить
+outwrite|outwrote|outwritten|переписать
+prepay|prepaid|prepaid|предоплачивать
+presell|presold|presold|продавать заранее
+prebuild|prebuilt|prebuilt|предварительно строить
+precut|precut|precut|предварительно резать
+redo|redid|redone|переделывать
+rebuild|rebuilt|rebuilt|перестраивать
+recast|recast|recast|переделывать
+recut|recut|recut|перерезать
+redeal|redealt|redealt|перераспределять
+redraw|redrew|redrawn|перерисовывать
+refit|refit|refit|переоборудовать
+regrind|reground|reground|перемалывать
+rehang|rehung|rehung|перевешивать
+rehear|reheard|reheard|переслушивать
+reknit|reknit|reknit|перевязывать
+relay|relaid|relaid|перекладывать
+relearn|relearnt/relearned|relearnt/relearned|переучивать
+relight|relit|relit|перезажигать
+remake|remade|remade|переделывать
+remeet|remet|remet|встречаться снова
+repay|repaid|repaid|возвращать (долг)
+reread|reread|reread|перечитывать
+rerun|reran|rerun|перезапускать
+resell|resold|resold|перепродавать
+resend|resent|resent|пересылать
+reset|reset|reset|сбрасывать
+resew|resewed|resewn|перешивать
+retake|retook|retaken|пересдавать
+reteach|retaught|retaught|переучивать
+retear|retore|retorn|перерывать
+retell|retold|retold|пересказывать
+rethink|rethought|rethought|переосмысливать
+rewind|rewound|rewound|перематывать
+rewire|rewired|rewired|пере蒙тировать
+rewrite|rewrote|rewritten|переписывать
+rewed|rewed|rewed|жениться снова
+unbear|unbore|unborne|распаковывать
+unbind|unbound|unbound|развязывать
+unbuild|unbuilt|unbuilt|разбирать
+unbury|unburied|unburied|откапывать
+unbuy|unbought|unbought|возвращать (покупку)
+uncast|uncast|uncast|разбирать (отливку)
