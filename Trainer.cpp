@@ -8,7 +8,7 @@ void Trainer::initRandom()
     random_device rd;
     gen = mt19937(rd());
 }
-void Trainer::loalVerbsFromFile(const string& filename)
+void Trainer::loadVerbsFromFile(const string& filename)
 {
     ifstream file(filename);
     if (!file.is_open())
@@ -22,7 +22,7 @@ void Trainer::loalVerbsFromFile(const string& filename)
 
     while (getline(file, line))
     {
-        if (line.empty() || line[0] == '#') # Пропускаем пустые строки и комментарии
+        if (line.empty() || line[0] == '#') // Пропускаем пустые строки и комментарии
             continue;
 
         stringstream ss(line);
@@ -82,6 +82,15 @@ void Trainer::showResults() const
     else 
         cout << "Стоит повторить таблицу глаголов\n";
 }
+void Trainer::saveStats() const
+{
+    ofstream file("stats.txt", ios::app);
+    if (file.is_open())
+    {
+        file << "Score: " << score << "/" << totalQuestions << "\n";
+        file.close();
+    }
+}
 Trainer::Trainer() : score(0), totalQuestions(0)
 {
     initRandom();
@@ -99,7 +108,7 @@ void Trainer::startQuiz(int qCount)
     totalQuestions = qCount;
     uniform_int_distribution<> distrib(0, static_cast<int>(verbs.size() - 1));
 
-    cout << "\n  Начало теста (" << qCount <<J " вопросов) ---\n";
+    cout << "\n  Начало теста (" << qCount << " вопросов) ---\n";
     cout << "Регистр и пробелы не имеют значения!\n";
 
     for (int i = 1; i <= qCount; ++i)
@@ -107,7 +116,7 @@ void Trainer::startQuiz(int qCount)
         int randomIndex = distrib(gen);
         const Verb& currentVerb = verbs[randomIndex];
 
-        cout << "\n[" << i << "/" << qCount << "] Перевод: " << currentVerb.getTranslation() << " | V!=1 " << currentVeb.getV1() << "\n";
+        cout << "\n[" << i << "/" << qCount << "] Перевод: " << currentVerb.getTranslation() << " | V1: " << currentVerb.getV1() << "\n";
         
         string userV2, userV3;
 

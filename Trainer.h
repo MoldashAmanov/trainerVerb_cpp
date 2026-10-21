@@ -16,7 +16,7 @@ class Trainer
         mt19937 gen;
         
         void initRandom();
-        void loalVerbsFromFile(const string& filename);
+        void loadVerbsFromFile(const string& filename);
         void loadDefaultVerbs();
         void showResults() const;
         void saveStats() const;
