@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
 
 void Trainer::initRandom()
 {
@@ -66,16 +67,41 @@ void Trainer::loadDefaultVerbs()
     verbs.emplace_back("make", "made", "made", "создавать");
     verbs.emplace_back("come", "came", "come", "приходить");
 }
+// Форматирование времени
+string Trainer::formatDuration(chrono::seconds duration) const
+{
+    auto totalSeconds = duration.count();
+    if (totalSeconds < 60)
+    {
+        return to_string(totalSeconds) + " сек";
+    }
+
+    int minutes = totalSeconds / 60;
+    int seconds = totalSeconds % 60;
+
+    stringstream ss;
+    ss << minutes << " мин " << seconds << " сек";
+    return ss.str();
+}
 void Trainer::showResults() const
 {
+    // Вычисляем время прохождения
+    auto duration = chrono::duration_cast<chrono::seconds>(quizEndTime - quizStartTime);
     cout << "\n------------------------------";
     cout << "----------РЕЗУЛЬТАТЫ------------";
     cout << "--------------------------------\n";
     cout << "Правильных ответов: " << score << " из " << totalQuestions << "\n";
     int percent = (totalQuestions > 0) ? (score * 100 / totalQuestions) : 0;
     cout << "Точность: " << percent << "%\n\n";
+    cout << "Время прохождения: " << formatDuration(duration) << "\n\n";
 
-    if (percent == 100)
+    // Бонусная оценка скорости
+    double avgTimePerQuestion = (totalQuestions > 0) ? static_cast<double>(duration.count()) / totalQuestions : 0;
+
+    cout << "Среднее время на вопрос: " << fixed << setprecision << avgTimePerQuestion << " сек\n\n"; 
+    if (percent == 100 && avgTimePerQuestion < 5.0)
+        cout << "Превосходно!!! Вы отвечаете молниеносно!!!\n";
+    else if (percent == 100)
         cout << "Превосходно!!!\n";
     else if (percent >= 70)
         cout << "Хороший результат!\n";
@@ -84,10 +110,12 @@ void Trainer::showResults() const
 }
 void Trainer::saveStats() const
 {
+    auto duration = chrono::duration_cast<chrono::seconds>(quizEndTime - quizStartTime);
     ofstream file("stats.txt", ios::app);
     if (file.is_open())
     {
-        file << "Score: " << score << "/" << totalQuestions << "\n";
+        file << "Score: " << score << "/" << totalQuestions
+            << "  |  Time: " << formatDuration(duration) << "\n";
         file.close();
     }
 }
@@ -110,6 +138,10 @@ void Trainer::startQuiz(int qCount)
 
     cout << "\n  Начало теста (" << qCount << " вопросов) ---\n";
     cout << "Регистр и пробелы не имеют значения!\n";
+    cout << "Таймер запущен!\n\n";
+
+    // Запускаем таймер
+    quizStartTime = chrono::steady_clock::now();
 
     for (int i = 1; i <= qCount; ++i)
     {
@@ -140,6 +172,9 @@ void Trainer::startQuiz(int qCount)
             cout << "  Правильно: V2 = " << currentVerb.getV2() << ", V3 = " << currentVerb.getV3() << "\n";
         }
     }
+
+    // Останавливаем таймер
+    quizEndTime = chrono::steady_clock::now();
     showResults();
     saveStats();
 }
